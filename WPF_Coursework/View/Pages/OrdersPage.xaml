@@ -1,0 +1,77 @@
+﻿<Page
+    x:Class="View.Pages.OrdersPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:local="clr-namespace:View.Pages"
+    mc:Ignorable="d" 
+    Title="OrdersPage"
+    Width="1100"
+    Height="650"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    ui:Design.Background="{DynamicResource ApplicationBackgroundBrush}"
+    ui:Design.Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    DataContext="{Binding RelativeSource={RelativeSource Self}}"
+    >
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <ListBox ItemsSource="{Binding OrderCards}" d:ItemsSource="{d:SampleData ItemCount=5}">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border CornerRadius="8" BorderBrush="#33000000" BorderThickness="2">
+                        <StackPanel Orientation="Vertical">
+                            <TextBox IsReadOnly="True" Text="{Binding TimeOfCreation}" Margin="0 10" HorizontalAlignment="Center"/>
+
+                            <Border CornerRadius="8" BorderBrush="#33000000" Width="500" BorderThickness="2">
+                                <StackPanel Orientation="Vertical">
+                                    <TextBox IsReadOnly="True" Text="Details" Margin="0 10" HorizontalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Status.Status}" Margin="0 4" TextWrapping="WrapWithOverflow" TextAlignment="Center"/>
+                                    <TextBlock Text="{Binding Status.TimeOfCreation}" Margin="0 4" TextWrapping="WrapWithOverflow" TextAlignment="Center"/>
+                                    <TextBlock Text="{Binding PostOffice.Name}" Margin="0 4" TextWrapping="WrapWithOverflow" TextAlignment="Center"/>
+                                </StackPanel>
+                            </Border>
+
+                            <ListBox ItemsSource="{Binding OrderedProducts}" d:ItemsSource="{d:SampleData ItemCount=2}">
+                                <ListBox.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center"/>
+                                    </ItemsPanelTemplate>
+                                </ListBox.ItemsPanel>
+
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border CornerRadius="8" BorderBrush="#33000000" Width="500" BorderThickness="2">
+                                            <Grid Height="80">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="80"/>
+                                                    <ColumnDefinition Width="1*"/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <ui:Image Grid.Column="0" Source="{Binding Product.Image}"/>
+                                                <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center">
+                                                    <ui:TextBlock Text="{Binding Product.Name}" TextAlignment="Center" FontSize="20"/>
+                                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                                        <ui:TextBlock Text="{Binding UnitPrice}" Margin="0 0 20 0"/>
+                                                        <ui:TextBlock Text="{Binding Quantity}"/>
+                                                    </StackPanel>
+                                                </StackPanel>
+                                            </Grid>
+                                        </Border>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </ScrollViewer>
+</Page>

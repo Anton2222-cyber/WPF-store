@@ -1,0 +1,58 @@
+﻿<Page
+    x:Class="View.Pages.BuyPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:local="clr-namespace:View.Pages"
+    mc:Ignorable="d" 
+    Title="BuyPage"
+    Width="1100"
+    Height="650"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    ui:Design.Background="{DynamicResource ApplicationBackgroundBrush}"
+    ui:Design.Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    DataContext="{Binding RelativeSource={RelativeSource Self}}"
+    >
+
+    <StackPanel Orientation="Vertical">
+        <ui:TextBlock Text="Total Price" HorizontalAlignment="Center" Margin="0 30 0 0"/>
+        <ui:TextBlock Text="{Binding TotalPrice}" HorizontalAlignment="Center" Margin="0 10 0 0" FontSize="20"/>
+
+        <ui:TextBlock Text="Address" HorizontalAlignment="Center" Margin="0 30 0 0"/>
+
+        <ui:TextBlock Text="Area" HorizontalAlignment="Center" Margin="0 10 0 0" FontSize="20"/>
+        <ComboBox Margin="0 4 0 0" Width="500"
+                  x:Name="AreasComboBox"
+                  ItemsSource="{Binding Areas}"
+                  DisplayMemberPath="Name"
+                  SelectedValuePath="Id"
+                  SelectionChanged="AreasComboBox_SelectionChanged"
+                  />
+
+        <ui:TextBlock Text="Settlement" HorizontalAlignment="Center" Margin="0 10 0 0" FontSize="20"/>
+        <ComboBox Margin="0 4 0 0" Width="500"
+                  x:Name="SettlementsComboBox"
+                  ItemsSource="{Binding Settlements}"
+                  DisplayMemberPath="Name"
+                  SelectedValuePath="Id"
+                  SelectionChanged="SettlementsComboBox_SelectionChanged"
+                  />
+
+        <ui:TextBlock Text="Post office" HorizontalAlignment="Center" Margin="0 10 0 0" FontSize="20"/>
+        <ComboBox Margin="0 4 0 0" Width="500"
+                  x:Name="PostOfficesComboBox"
+                  ItemsSource="{Binding PostOffices}"
+                  DisplayMemberPath="Name"
+                  SelectedValuePath="Id"
+                  />
+
+        <ui:Button HorizontalAlignment="Center" Margin="0 30 0 0" Width="500" FontSize="20" Click="OrderButton_Click">
+            <StackPanel Orientation="Horizontal">
+                <ui:SymbolIcon Symbol="ShoppingBag24" Margin="0 0 10 0"/>
+                <ui:TextBlock Text="Order"/>
+            </StackPanel>
+        </ui:Button>
+    </StackPanel>
+</Page>

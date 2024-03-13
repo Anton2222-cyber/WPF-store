@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041D\u043E\u0432\u0430 \u043F\u0430\u043F\u043A\u0430 (2)\\WPF_Coursework\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{45521EFF-C197-4F5D-965F-A8EF0EB1872E}|View\\View.csproj|c:\\users\\user\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u043D\u043E\u0432\u0430 \u043F\u0430\u043F\u043A\u0430 (2)\\wpf_coursework\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{45521EFF-C197-4F5D-965F-A8EF0EB1872E}|View\\View.csproj|solutionrelative:view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088CA076-CA1D-41AD-89E7-86811FA7A2DC}|LocalData\\LocalData.csproj|c:\\users\\user\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u043D\u043E\u0432\u0430 \u043F\u0430\u043F\u043A\u0430 (2)\\wpf_coursework\\localdata\\context\\localdatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088CA076-CA1D-41AD-89E7-86811FA7A2DC}|LocalData\\LocalData.csproj|solutionrelative:localdata\\context\\localdatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45521EFF-C197-4F5D-965F-A8EF0EB1872E}|View\\View.csproj|c:\\users\\user\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u043D\u043E\u0432\u0430 \u043F\u0430\u043F\u043A\u0430 (2)\\wpf_coursework\\view\\views.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45521EFF-C197-4F5D-965F-A8EF0EB1872E}|View\\View.csproj|solutionrelative:view\\views.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041D\u043E\u0432\u0430 \u043F\u0430\u043F\u043A\u0430 (2)\\WPF_Coursework\\View\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "View\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041D\u043E\u0432\u0430 \u043F\u0430\u043F\u043A\u0430 (2)\\WPF_Coursework\\View\\MainWindow.xaml",
+              "RelativeToolTip": "View\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-13T21:12:45.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LocalDataContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041D\u043E\u0432\u0430 \u043F\u0430\u043F\u043A\u0430 (2)\\WPF_Coursework\\LocalData\\Context\\LocalDataContext.cs",
+              "RelativeDocumentMoniker": "LocalData\\Context\\LocalDataContext.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041D\u043E\u0432\u0430 \u043F\u0430\u043F\u043A\u0430 (2)\\WPF_Coursework\\LocalData\\Context\\LocalDataContext.cs",
+              "RelativeToolTip": "LocalData\\Context\\LocalDataContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T21:12:31.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Views.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041D\u043E\u0432\u0430 \u043F\u0430\u043F\u043A\u0430 (2)\\WPF_Coursework\\View\\Views.cs",
+              "RelativeDocumentMoniker": "View\\Views.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041D\u043E\u0432\u0430 \u043F\u0430\u043F\u043A\u0430 (2)\\WPF_Coursework\\View\\Views.cs",
+              "RelativeToolTip": "View\\Views.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T21:12:14.125Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 189,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

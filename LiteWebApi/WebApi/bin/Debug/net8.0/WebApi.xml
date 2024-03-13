@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:WebApi.Migrations.Initial">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:WebApi.Migrations.AddedMicrosoftIdentity">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.AddedMicrosoftIdentity.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.AddedMicrosoftIdentity.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.AddedMicrosoftIdentity.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:WebApi.Migrations.Addedproductstable">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.Addedproductstable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.Addedproductstable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.Addedproductstable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:WebApi.Migrations.AddedPricefieldtoProducttable">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.AddedPricefieldtoProducttable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.AddedPricefieldtoProducttable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.AddedPricefieldtoProducttable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:WebApi.Migrations.AddedOrderfieldtoImagestable">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.AddedOrderfieldtoImagestable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.AddedOrderfieldtoImagestable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.AddedOrderfieldtoImagestable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:WebApi.Migrations.AddedBasketProductstable">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.AddedBasketProductstable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.AddedBasketProductstable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.AddedBasketProductstable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:WebApi.Migrations.Addedtablesfororders">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.Addedtablesfororders.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.Addedtablesfororders.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.Addedtablesfororders.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:WebApi.Migrations.AddedPostOfficesandAddressestables">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.AddedPostOfficesandAddressestables.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.AddedPostOfficesandAddressestables.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.AddedPostOfficesandAddressestables.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:WebApi.Migrations.Updatedtablesforaddressofpostoffices">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.Updatedtablesforaddressofpostoffices.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.Updatedtablesforaddressofpostoffices.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.Updatedtablesforaddressofpostoffices.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:WebApi.Migrations.AddedfieldsforLatitudeandLongitudetoPostOffice">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.AddedfieldsforLatitudeandLongitudetoPostOffice.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.AddedfieldsforLatitudeandLongitudetoPostOffice.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebApi.Migrations.AddedfieldsforLatitudeandLongitudetoPostOffice.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="P:WebApi.Models.Account.LoginViewModel.Email">
+            <summary>
+            Електронна пошта
+            </summary>
+            <example>admin@gmail.com</example>
+        </member>
+        <member name="P:WebApi.Models.Account.LoginViewModel.Password">
+            <summary>
+            Пароль
+            </summary>
+            <example>admin</example>
+        </member>
+    </members>
+</doc>

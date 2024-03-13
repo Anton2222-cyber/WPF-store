@@ -1,0 +1,94 @@
+﻿<Page
+	x:Class="View.Pages.ProductsPage"
+	x:Name="ProductsPageInstance"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+	xmlns:local="clr-namespace:View.Pages"
+	mc:Ignorable="d" 
+	Title="ProductsPage"
+	Width="1100"
+	Height="650"
+	xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+	ui:Design.Background="{DynamicResource ApplicationBackgroundBrush}"
+	ui:Design.Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+	Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+	DataContext="{Binding RelativeSource={RelativeSource Self}}"
+	>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="480"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="140"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <ui:Button Grid.Column="1" HorizontalAlignment="Center" Click="PrevButton_Click">
+                <ui:SymbolIcon Symbol="ArrowLeft24" />
+            </ui:Button>
+            <ui:NumberBox Grid.Column="2" x:Name="PageNumberBox" HorizontalAlignment="Center" VerticalAlignment="Center" Minimum="1" Maximum="{Binding AvailablePages}" Value="1" ValueChanged="NumberBox_ValueChanged"/>
+            <ui:TextBlock Grid.Column="3" Text="page of" VerticalAlignment="Center"/>
+            <ui:TextBox Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding AvailablePages}" IsReadOnly="True"/>
+            <ui:Button Grid.Column="5" HorizontalAlignment="Center" Click="NextButton_Click">
+                <ui:SymbolIcon Symbol="ArrowRight24" />
+            </ui:Button>
+        </Grid>
+        <ListBox Grid.Row="1" ItemsSource="{Binding ProductsList}" d:ItemsSource="{d:SampleData ItemCount=5}">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Top"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Width="340" Height="440">
+                        <Border BorderBrush="#33000000" BorderThickness="1" CornerRadius="16">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="260"/>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="70"/>
+                                    <RowDefinition Height="40"/>
+                                </Grid.RowDefinitions>
+
+                                <ui:Image Grid.Row="0" Margin="4" CornerRadius="8" BorderBrush="#33000000" Source="{Binding Image}"/>
+                                <ui:TextBlock Grid.Row="1" Margin="20 4" Text="{Binding Name}" FontSize="24"></ui:TextBlock>
+                                <ui:TextBlock Grid.Row="2" Margin="20 4" Text="{Binding Description}" TextWrapping="WrapWithOverflow"></ui:TextBlock>
+
+                                <Grid Grid.Row="3" Margin="4">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <ui:Button Grid.Column="0" Tag="{Binding Id}" HorizontalAlignment="Center" Visibility="{Binding ElementName=ProductsPageInstance, Path=VisibleIsAdminOrUser}" Click="BuyButton_Click">
+                                        <ui:SymbolIcon Symbol="ShoppingBag24" />
+                                    </ui:Button>
+                                    <ui:Button Grid.Column="1" Tag="{Binding Id}" HorizontalAlignment="Center" Visibility="{Binding ElementName=ProductsPageInstance, Path=VisibleIsAdmin}" Click="NotCompletedButton_Click">
+                                        <ui:SymbolIcon Symbol="Edit24" />
+                                    </ui:Button>
+                                    <ui:Button Grid.Column="2" Tag="{Binding Id}" HorizontalAlignment="Center" Visibility="{Binding ElementName=ProductsPageInstance, Path=VisibleIsAdmin}" Click="NotCompletedButton_Click">
+                                        <ui:SymbolIcon Symbol="Delete24" />
+                                    </ui:Button>
+                                </Grid>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Page>
